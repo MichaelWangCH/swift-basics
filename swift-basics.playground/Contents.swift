@@ -1,5 +1,4 @@
-//: Playground - noun: a place where people can play
-
+//: This playground demonstrate the *basics of Swift.*
 import UIKit
 
 // Declaring Constants and Variables
