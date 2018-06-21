@@ -8,7 +8,7 @@ var hello = "Hello World"
 hello = "Hello Swift"
 print(hello)
 
-for character in hello.characters {
+for character in hello {
     print(character)
 }
 
@@ -22,7 +22,7 @@ optionalResponseCode = nil
 if let serverResponseCode = optionalResponseCode {
     print("server response code: \(serverResponseCode)")
 } else {
-    print("server response code is \(optionalResponseCode)")
+    print("server response code is nil")
 }
 
 // Collections
@@ -70,7 +70,7 @@ for (index, lang) in reversedLangs.enumerated() {
     print("\(index): Hello \(lang)")
 }
 
-reversedLangs = languages.sorted{ (s1, s2) -> Bool in
+reversedLangs = languages.sorted { (s1, s2) -> Bool in
     return s1 < s2
 }
 
